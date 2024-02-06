@@ -321,7 +321,7 @@ export class MyClient {
                 if(err.message == 'Request failed with status code 401'){
                     console.log('#### error status = 401')
                     let resAuth2: any = await scim_auth()
-                    let resG2 = await scim_GET_Groups()
+                    let resG2 = await scim_GET_Groups_Details()
                     return resG2
                     }    else{
                     console.log('about to throw ConnectorError')
