@@ -5,7 +5,3 @@ declare var __CLIENT_SECRET: string
 declare var __ACCESS_TOKEN: string
 declare var __EXPIRATION_TIME: number
 declare var __API_INSTANCE: string
-declare var __API_KEY: string
-declare var __RUNAS_USER: string
-declare var __COOKIE: string
-declare var __PERMISSIONS: []
