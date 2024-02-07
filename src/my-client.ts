@@ -452,7 +452,7 @@ export class MyClient {
                     console.log('#### error status = 401')
                     let resAuth2: any = await scim_auth()
                     const change = {"op":op,"path":"members","value":[{"value":account}]}
-                    let changeAccount2 = await scim_PATCH_Group(group,change)
+                    let changeAccount2 = await scim_PATCH_Group(group.substring(2),change)
                     return changeAccount2
                 }    else{
                         console.log('about to throw ConnectorError')
